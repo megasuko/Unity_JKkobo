@@ -16,7 +16,7 @@ public class DashController : MonoBehaviour
         if (pressed == true)
         {
             flag = 1;
-            DashSpeed.moveSpeed = 4f;
+            DashSpeed.moveSpeed = 3f;
         }
         else
         {

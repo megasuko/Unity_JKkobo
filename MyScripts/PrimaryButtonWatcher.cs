@@ -11,6 +11,7 @@ public class PrimaryButtonWatcher : MonoBehaviour
     public PrimaryButtonEvent primaryButtonPress;
 
     private bool lastButtonState = false;
+    public bool tempState = false;
     private List<InputDevice> devicesWithPrimaryButton;
 
     private void Awake()
@@ -58,7 +59,6 @@ public class PrimaryButtonWatcher : MonoBehaviour
 
     void Update()
     {
-        bool tempState = false;
         foreach (var device in devicesWithPrimaryButton)
         {
             bool primaryButtonState = false;
